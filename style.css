@@ -1,0 +1,237 @@
+/* ==========================================
+   1. RESET BÁSICO E CONFIGURAÇÕES GLOBAIS
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e bordas não aumentem a largura dos blocos [26.1] */
+}
+
+body {
+    /* Define uma tipografia sem serifa para todo o site por herança [7.2, 13] */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    background-color: #f9f9f9;
+    color: #2e4255; /* Tom de cinza escuro para melhor legibilidade [31.1] */
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: inherit; /* Herda a cor do elemento pai por cascata [31.1] */
+}
+
+ul {
+    list-style: none; /* Remove as bolinhas das listas [30.1] */
+}
+
+/* ==========================================
+   2. CABEÇALHO (HEADER) COM FLEXBOX [34.1]
+   ========================================== */
+.cabecalho {
+    display: flex;
+    justify-content: space-between; /* Empurra a logo para a esquerda e o menu para a direita [34.1] */
+    align-items: center; /* Alinha os itens verticalmente ao centro [34.1] */
+    padding: 1.5rem 5%; /* Espaçamento interno para respiro [9.2] */
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra suave para dar profundidade */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e93d50; /* Vermelho voltado para conversão de vendas */
+}
+
+.menu {
+    display: flex; /* Deixa os itens do menu lado a lado [34.1] */
+    gap: 1.5rem; /* Cria um espaçamento moderno entre os links do menu */
+}
+
+.menu a {
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #e93d50; /* Muda de cor ao passar o mouse */
+}
+
+/* ==========================================
+   3. HERO SECTION (APRESENTAÇÃO PRINCIPAL)
+   ========================================== */
+.hero {
+    text-align: center;
+    padding: 4rem 10%; /* Bastante respiro interno em cima, embaixo e nas laterais [9.2] */
+    background-color: #1a2b3c; /* Azul escuro profissional */
+    color: #ffffff;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem; /* Afasta o título do parágrafo abaixo */
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.botao-cta {
+    display: inline-block;
+    background-color: #e93d50; /* Botão principal vermelho chamativo [38.1] */
+    color: #ffffff;
+    padding: 0.8rem 2rem; /* Espaçamento interno confortável para toque [9.2] */
+    border-radius: 5px; /* Bordas arredondadas modernas [38.1] */
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(233, 61, 80, 0.3);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.botao-cta:hover {
+    background-color: #d12e41; /* Tom mais escuro no hover */
+    transform: translateY(-2px); /* Efeito suave de subida ao passar o mouse */
+}
+/* ==========================================
+   4. SEÇÃO DE PARCEIROS E VITRINE [34.1, 45.1]
+   ========================================== */
+.parceiros {
+    padding: 3rem 5%;
+    text-align: center;
+    background-color: #f1f3f5;
+}
+
+.logos-parceiros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.logos-parceiros span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #7f8c8d;
+    padding: 0.6rem 1.2rem;
+    border: 2px dashed #bdc3c7;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.produtos {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produtos h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 2rem;
+}
+
+.produto-card {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+}
+
+.produto-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.preco-antigo {
+    font-size: 0.9rem;
+    color: #95a5a6;
+    text-decoration: line-through;
+}
+
+.preco-novo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 1.5rem;
+}
+
+/* BOTÃO DE COMPRA BASE */
+.botao-compra {
+    display: block;
+    color: #ffffff;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+}
+
+/* MODIFICADORES DE BOTÕES [15, 22.1] */
+.botao--amazon {
+    background-color: #ff9900;
+}
+.botao--amazon:hover {
+    background-color: #e68a00;
+}
+
+.botao--shopee {
+    background-color: #ee4d2d;
+}
+.botao--shopee:hover {
+    background-color: #d73c1f;
+}
+
+.botao--mercadolivre {
+    background-color: #fff159;
+    color: #333333;
+}
+.botao--mercadolivre:hover {
+    background-color: #e6d73f;
+}
+
+.botao--magalu {
+    background-color: #0086ff;
+}
+.botao--magalu:hover {
+    background-color: #0070d9;
+}
+/* ==========================================
+   RODAPÉ (FOOTER) CENTRALIZADO [7.3, 19.1]
+   ========================================== */
+.rodape {
+    text-align: center; /* Centraliza todos os elementos internos (textos, imagens e links) [7.3] */
+    padding: 2rem 5%; /* Espaçamento interno para respiro [9.2] */
+    background-color: #ffffff; /* Fundo branco limpo */
+    border-top: 1px solid #e1e8ed; /* Linha divisória sutil no topo [7.5] */
+}
+
+.rodape p {
+    display: block; /* Garante que o parágrafo ocupe a linha inteira [19.1] */
+    margin-bottom: 0.5rem; /* Cria um pequeno espaço para o texto debaixo [9.2] */
+    font-weight: 500;
+}
+
+.rodape small {
+    display: block; /* Faz o aviso de transparência quebrar para a linha seguinte [19.1] */
+    color: #7f8c8d; /* Tom de cinza discreto para o aviso */
+    max-width: 600px; /* Limita a largura do texto para não ficar gigante em telas grandes */
+    margin: 0 auto; /* Centraliza o bloco do small horizontalmente [10.2] */
+}

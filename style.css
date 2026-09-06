@@ -235,3 +235,43 @@ ul {
     max-width: 600px; /* Limita a largura do texto para não ficar gigante em telas grandes */
     margin: 0 auto; /* Centraliza o bloco do small horizontalmente [10.2] */
 }
+/* ==========================================
+   7. RESPONSIVIDADE COM MEDIA QUERIES [25.2, 27.2]
+   ========================================== */
+@media (max-width: 768px) {
+    /* Faz a logo e o menu ficarem empilhados verticalmente no celular [34.1] */
+    .cabecalho {
+        flex-direction: column;
+        gap: 1rem; /* Espaçamento entre a logo e o menu */
+        padding: 1rem 5%;
+    }
+
+    /* Centraliza os links do menu */
+    .menu {
+        justify-content: center;
+        width: 100%;
+        gap: 1.2rem;
+    }
+
+    /* Reduz o tamanho da fonte do banner principal para não quebrar feio [25.2] */
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Ajusta os espaçamentos internos para telas menores [9.2] */
+    .hero {
+        padding: 3rem 5%;
+    }
+
+    .parceiros {
+        padding: 2rem 5%;
+    }
+
+    .produtos {
+        padding: 3rem 5%;
+    }
+}

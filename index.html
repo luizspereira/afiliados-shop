@@ -3,113 +3,407 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super ofertas | Economize nas Maiores lojas</title>
-    <!--Favicon(Icone da aba do navegador)-->
-    <link rel="icon" href="img/favicon.ico">
-    <!--Importacao do nosso futuro arquivo de estilo-->
-    <link rel="stylesheet" href="/style.css">
+    
+    <!-- ====================================================================
+         SEO COMPLETO: META TAGS PRINCIPAIS
+         ==================================================================== -->
+    <title>Compra Justa | Melhores Ofertas, Promoções e Cupons de Desconto</title>
+    <meta name="description" content="Encontre as melhores ofertas, promoções diárias e cupons de desconto das maiores lojas: Amazon, Mercado Livre, Shopee e Magalu no Compra Justa. Economize agora!">
+    <meta name="keywords" content="ofertas, promoções, cupons de desconto, compras online, menor preço, amazon, shopee, mercado livre, magalu">
+    <meta name="author" content="Compra Justa">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://comprajusta.com.br/">
 
+    <!-- Metas de Navegador Mobile & PWA -->
+    <meta name="theme-color" content="#1a2b3c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Compra Justa">
+
+    <!-- Favicon e Ícones -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicon.ico">
+
+    <!-- ====================================================================
+         OPEN GRAPH (FACEBOOK, WHATSAPP, LINKEDIN)
+         ==================================================================== -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://comprajusta.com.br/">
+    <meta property="og:site_name" content="Compra Justa">
+    <meta property="og:title" content="Compra Justa | Melhores Ofertas, Promoções e Cupons de Desconto">
+    <meta property="og:description" content="Filtramos diariamente os melhores descontos e cupons para você economizar nas maiores lojas da internet.">
+    <meta property="og:image" content="https://comprajusta.com.br/img/fone-bluetooth.jpg">
+    <meta property="og:image:alt" content="Melhores ofertas em destaque no Compra Justa">
+
+    <!-- ====================================================================
+         TWITTER CARDS
+         ==================================================================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Compra Justa | Melhores Ofertas e Cupons de Desconto">
+    <meta name="twitter:description" content="Filtramos diariamente os maiores descontos da internet nas maiores lojas parceiras.">
+    <meta name="twitter:image" content="https://comprajusta.com.br/img/fone-bluetooth.jpg">
+
+    <!-- ====================================================================
+         DADOS ESTRUTURADOS SCHEMA.ORG (JSON-LD) PARA RICH SNIPPETS NO GOOGLE
+         ==================================================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Compra Justa",
+      "url": "https://comprajusta.com.br/",
+      "description": "O melhor lugar para encontrar as melhores ofertas e cupons de desconto.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://comprajusta.com.br/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Ofertas em Destaque",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "Fone de Ouvido Sem Fio Bluetooth",
+            "image": "https://comprajusta.com.br/img/fone-bluetooth.jpg",
+            "description": "Fone de ouvido sem fio bluetooth com cancelamento de ruído e alta fidelidade de som.",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "BRL",
+              "price": "99.90",
+              "priceValidUntil": "2026-12-31",
+              "availability": "https://schema.org/InStock"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "Celular Smartphone",
+            "image": "https://comprajusta.com.br/img/Produto-Iphone.jpg",
+            "description": "Smartphone de última geração com tela fluida e câmera de alta resolução.",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "BRL",
+              "price": "1499.90",
+              "priceValidUntil": "2026-12-31",
+              "availability": "https://schema.org/InStock"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Product",
+            "name": "Notebook Ultrafino",
+            "image": "https://comprajusta.com.br/img/notebook.jpg",
+            "description": "Notebook ultrafino de alta performance para produtividade, estudos e trabalho.",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "BRL",
+              "price": "2999.90",
+              "priceValidUntil": "2026-12-31",
+              "availability": "https://schema.org/InStock"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Product",
+            "name": "Smartwatch Inteligente",
+            "image": "https://comprajusta.com.br/img/smartwatch.jpg",
+            "description": "Smartwatch fitness com monitoramento cardíaco, sono e notificações.",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "BRL",
+              "price": "299.90",
+              "priceValidUntil": "2026-12-31",
+              "availability": "https://schema.org/InStock"
+            }
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Importação do arquivo de estilo (caminho relativo limpo) -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--CABEÇALHO-->
+    <!-- CABEÇALHO -->
     <header class="cabecalho">
-        <a href="index.html">
-            <h1 class="logo">Compra Justa - O melhor lugar para encontrar as melhores ofertas</h1>
-        </a>
-        <nav>
-            <ul class="menu">
-                <li><a href="#lojas">Lojas</a></li>
-                <li><a href="#ofertas">Ofertas</a></li>
-                <li><a href="#newsletter">Alertas</a></li>
-            </ul>
-        </nav>
+        <div class="cabecalho-container">
+            <div class="logo-wrapper">
+                <h1 class="logo">
+                    <a href="index.html" aria-label="Compra Justa - Página Inicial">Compra Justa</a>
+                </h1>
+                <span class="logo-slogan">O melhor lugar para encontrar as melhores ofertas</span>
+            </div>
+            
+            <nav aria-label="Navegação Principal">
+                <ul class="menu">
+                    <li><a href="#lojas">Lojas</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#newsletter">Alertas</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!--HERO SECTION(Chamada Principal)-->
+        <!-- HERO SECTION (Chamada Principal) -->
         <section class="hero">
-            <h2>Economize tempo e dinheiro com as melhores ofertas da internet</h2>
-            <p>Filtramos diariamente os melhores descontos e cupons para você.</p>
-            <a href="#ofertas" class="botao-cta">Ver Ofertas Ativas</a>
-
+            <div class="hero-conteudo">
+                <span class="hero-badge">🔥 Radar de Descontos Hoje</span>
+                <h2>Economize tempo e dinheiro com as melhores ofertas da internet</h2>
+                <p>Filtramos diariamente os melhores descontos, promoções relâmpago e cupons verificados para você.</p>
+                <a href="#ofertas" class="botao-cta">
+                    <span>Ver Ofertas Ativas</span>
+                    <span aria-hidden="true">↓</span>
+                </a>
+            </div>
         </section>
 
-        <!--SEÇÃO DE PARCEIROS (Lojas)-->
+        <!-- SEÇÃO DE PARCEIROS (Lojas) -->
         <section id="lojas" class="parceiros">
             <h3>Nossas Lojas Parceiras</h3>
             <div class="logos-parceiros">
-                <span>Amazon</span>
-                <span>Mercado Livre</span>
-                <span>Shopee</span>
-                <span>Magalu</span>
+                <span class="parceiro-badge amazon">🛒 Amazon</span>
+                <span class="parceiro-badge mercadolivre">⚡ Mercado Livre</span>
+                <span class="parceiro-badge shopee">🛍️ Shopee</span>
+                <span class="parceiro-badge magalu">💙 Magalu</span>
             </div>
         </section>
 
-        <!--VITRINE DE PRODUTOS-->
+        <!-- VITRINE DE PRODUTOS -->
         <section id="ofertas" class="produtos">
-            <h3>Ofertas em Destaque</h3>
+            <div class="secao-cabecalho">
+                <h3>Ofertas em Destaque</h3>
+                <p>Preços atualizados em tempo real com garantia de menor preço</p>
+            </div>
+
+            <!-- Painel Interativo de Animação de Preços e Cupons -->
+            <div class="painel-desconto-interativo" aria-label="Controle de Simulação de Ofertas">
+                <div class="painel-info">
+                    <span class="painel-icone" aria-hidden="true">⚡</span>
+                    <div class="painel-texto">
+                        <h4>Simulação de Desconto e Cupom VIP</h4>
+                        <p>Veja a animação do preço antigo sendo riscado e o novo valor com cupom aplicado.</p>
+                    </div>
+                </div>
+                <button type="button" id="btn-animar-todos" class="botao-animar-todos" aria-label="Simular cupom VIP em todos os produtos">
+                    <span>⚡</span> Aplicar Cupom VIP em Todos
+                </button>
+            </div>
 
             <div class="grade-produtos">
-                <!--Produtos 1: Amazon-->
-                <article class="produto-card">
-                    <img src="img/fone-bluetooth.jpg" alt="Fone de Ouvido Bluetooth">
-                    <h4>Fone de Ouvido Sem Fio Bluetooth</h4>
-                    <p class="preco-antigo">R$ 199,90</p>
-                    <p class="preco-novo"> R$ 99,90</p>
-                    <a href="SEU_LINK_DE_AFILIADO_AMAZON" target="_blank" rel="noopener noreferrer" class="botao--amazon">
-                        Ver na amazon
-                    </a>
+                <!-- Produto 1: Amazon -->
+                <article class="produto-card" data-tag-original="-50% OFF">
+                    <span class="tag-desconto">-50% OFF</span>
+                    <div class="produto-imagem-wrapper">
+                        <img src="img/fone-bluetooth.jpg" 
+                             alt="Fone de Ouvido Sem Fio Bluetooth com cancelamento de ruído" 
+                             width="400" 
+                             height="300" 
+                             loading="lazy">
+                    </div>
+                    
+                    <div class="produto-detalhes">
+                        <h4>Fone de Ouvido Sem Fio Bluetooth</h4>
+                        <div class="bloco-preco" aria-live="polite">
+                            <div class="preco-antigo-container">
+                                <span class="label-de">De</span>
+                                <span class="preco-antigo">R$ 199,90</span>
+                            </div>
+                            <div class="preco-novo-container">
+                                <span class="label-por">Por</span>
+                                <span class="preco-novo">R$ 99,90</span>
+                            </div>
+                            <button type="button" class="botao-trocar-preco" aria-label="Simular cupom extra no Fone Bluetooth">
+                                <span>🏷️</span> Simular Cupom Extra
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="acoes-card">
+                        <a href="https://www.amazon.com.br/dp/B08N5WRWNW?tag=afiliadoshop-20" 
+                           target="_blank" 
+                           rel="noopener noreferrer sponsored" 
+                           class="botao-compra botao--amazon" 
+                           aria-label="Ver Fone de Ouvido Bluetooth na Amazon">
+                            <span>Ver na Amazon</span>
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
                 </article>
 
-                <!--Produto 2: Shopee-->
-                <article class="produto-card">
-                    <img src="img/Produto-Iphone.jpg" alt="Celular Smartphone">
-                    <h4>Celular Smartphone</h4>
-                    <p class="preco-antigo">R$ 1.999,90</p>
-                    <p class="preco-novo"> R$ 1.499,90</p>
-                    <a href="SEU_LINK_DE_AFILIADO_SHOPEE" target="_blank" rel="noopener noreferrer" class="botao--shopee">
-                        Ver no shopee
-                    </a>
+                <!-- Produto 2: Shopee -->
+                <article class="produto-card" data-tag-original="-25% OFF">
+                    <span class="tag-desconto">-25% OFF</span>
+                    <div class="produto-imagem-wrapper">
+                        <img src="img/Produto-Iphone.jpg" 
+                             alt="Celular Smartphone com tela de alta definição" 
+                             width="400" 
+                             height="300" 
+                             loading="lazy">
+                    </div>
+                    
+                    <div class="produto-detalhes">
+                        <h4>Celular Smartphone</h4>
+                        <div class="bloco-preco" aria-live="polite">
+                            <div class="preco-antigo-container">
+                                <span class="label-de">De</span>
+                                <span class="preco-antigo">R$ 1.999,90</span>
+                            </div>
+                            <div class="preco-novo-container">
+                                <span class="label-por">Por</span>
+                                <span class="preco-novo">R$ 1.499,90</span>
+                            </div>
+                            <button type="button" class="botao-trocar-preco" aria-label="Simular cupom extra no Smartphone">
+                                <span>🏷️</span> Simular Cupom Extra
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="acoes-card">
+                        <a href="https://shopee.com.br/product/123456789/987654321?utm_source=afiliado" 
+                           target="_blank" 
+                           rel="noopener noreferrer sponsored" 
+                           class="botao-compra botao--shopee" 
+                           aria-label="Ver Smartphone na Shopee">
+                            <span>Ver na Shopee</span>
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
                 </article>
 
-                <!--Produto 3: Mercado Livre-->
-                <article class="produto-card">
-                    <img src="img/notebook.jpg" alt="Notebook">
-                    <h4>Notebook</h4>
-                    <p class="preco-antigo">R$ 3.999,90</p>
-                    <p class="preco-novo"> R$ 2.999,90</p>
-                    <a href="SEU_LINK_DE_AFILIADO_MERCADOLIVRE" target="_blank" rel="noopener noreferrer" class="botao--mercadolivre">
-                        Ver no mercado livre
-                    </a>
+                <!-- Produto 3: Mercado Livre -->
+                <article class="produto-card" data-tag-original="-25% OFF">
+                    <span class="tag-desconto">-25% OFF</span>
+                    <div class="produto-imagem-wrapper">
+                        <img src="img/notebook.jpg" 
+                             alt="Notebook ultrafino de alta performance" 
+                             width="400" 
+                             height="300" 
+                             loading="lazy">
+                    </div>
+                    
+                    <div class="produto-detalhes">
+                        <h4>Notebook Ultrafino</h4>
+                        <div class="bloco-preco" aria-live="polite">
+                            <div class="preco-antigo-container">
+                                <span class="label-de">De</span>
+                                <span class="preco-antigo">R$ 3.999,90</span>
+                            </div>
+                            <div class="preco-novo-container">
+                                <span class="label-por">Por</span>
+                                <span class="preco-novo">R$ 2.999,90</span>
+                            </div>
+                            <button type="button" class="botao-trocar-preco" aria-label="Simular cupom extra no Notebook">
+                                <span>🏷️</span> Simular Cupom Extra
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="acoes-card">
+                        <a href="https://lista.mercadolivre.com.br/notebook?utm_source=comprajusta" 
+                           target="_blank" 
+                           rel="noopener noreferrer sponsored" 
+                           class="botao-compra botao--mercadolivre" 
+                           aria-label="Ver Notebook no Mercado Livre">
+                            <span>Ver no Mercado Livre</span>
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
                 </article>
 
-                <!--Produto 4: Magalu-->
-                <article class="produto-card">
-                    <img src="img/smartwatch.jpg" alt="Smartwatch">
-                    <h4>Smartwatch</h4>
-                    <p class="preco-antigo">R$ 499,90</p>
-                    <p class="preco-novo"> R$ 299,90</p>
-                    <a href="SEU_LINK_DE_AFILIADO_MAGALU" target="_blank" rel="noopener noreferrer" class="botao--magalu">
-                        Ver na magalu
-                    </a>
+                <!-- Produto 4: Magalu -->
+                <article class="produto-card" data-tag-original="-40% OFF">
+                    <span class="tag-desconto">-40% OFF</span>
+                    <div class="produto-imagem-wrapper">
+                        <img src="img/smartwatch.jpg" 
+                             alt="Smartwatch Inteligente com monitor cardíaco" 
+                             width="400" 
+                             height="300" 
+                             loading="lazy">
+                    </div>
+                    
+                    <div class="produto-detalhes">
+                        <h4>Smartwatch Inteligente</h4>
+                        <div class="bloco-preco" aria-live="polite">
+                            <div class="preco-antigo-container">
+                                <span class="label-de">De</span>
+                                <span class="preco-antigo">R$ 499,90</span>
+                            </div>
+                            <div class="preco-novo-container">
+                                <span class="label-por">Por</span>
+                                <span class="preco-novo">R$ 299,90</span>
+                            </div>
+                            <button type="button" class="botao-trocar-preco" aria-label="Simular cupom extra no Smartwatch">
+                                <span>🏷️</span> Simular Cupom Extra
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="acoes-card">
+                        <a href="https://www.magazineluiza.com.br/busca/smartwatch/?seller_id=comprajusta" 
+                           target="_blank" 
+                           rel="noopener noreferrer sponsored" 
+                           class="botao-compra botao--magalu" 
+                           aria-label="Ver Smartwatch na Magalu">
+                            <span>Ver na Magalu</span>
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
                 </article>
             </div>
         </section>
 
-        <!--CAPTURA DE LEADS (Newletter)-->
-        <section id="Newletter" class="Newletter">
-            <h3>Nao perca nem uma Promoção bombastica</h3>
-            <p>Cadastre seu e-mail e entre para o nosso grupo VIP de ofertas.</p>
-            <form action="#" method="POST" class="form-newletter">
-                <input type="email" placeholder="Seu melhor e-mail" required>
-                <button type="submit">Cadastrar</button>
-            </form>
+        <!-- CAPTURA DE LEADS (Newsletter) COM ACESSIBILIDADE TOTAL (CORREÇÃO SONARQUBE) -->
+        <section id="newsletter" class="newsletter">
+            <div class="newsletter-container">
+                <h3>Não perca nenhuma promoção bombástica!</h3>
+                <p>Cadastre seu e-mail e receba alertas diários no nosso grupo VIP de ofertas e cupons secretos.</p>
+                
+                <!-- Formulário com Label Acessível vinculada por ID (Correção SonarQube S1077 / S5256) -->
+                <form action="#" method="POST" class="form-newsletter" novalidate>
+                    <label for="newsletter-email" class="sr-only">Seu melhor e-mail</label>
+                    <input type="email" 
+                           id="newsletter-email" 
+                           name="email" 
+                           placeholder="Seu melhor e-mail" 
+                           required 
+                           autocomplete="email">
+                    <button type="submit">Cadastrar Grátis</button>
+                </form>
+            </div>
         </section>
     </main>
-    <!--RODAPÉ-->
+
+    <!-- RODAPÉ -->
     <footer class="rodape">
-        <p>&copy; 2026 Achei Promo. Todos os direitos reservados.</p>
-        <small>Nota de transparencia: Ao comprar atraves dos nossos links, nos podemos garantir sua.</small>
+        <div class="rodape-container">
+            <p>&copy; 2026 Compra Justa. Todos os direitos reservados.</p>
+            <small>Nota de transparência: Ao comprar através dos nossos links recomendados, podemos receber uma pequena comissão dos parceiros sem nenhum custo adicional para você.</small>
+        </div>
     </footer>
+
+    <!-- Script de Animação e Interatividade -->
+    <script src="script.js" defer></script>
 </body>
+</html>
+
 </html>

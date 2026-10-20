@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="960" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="hero-grad" x1="0" y1="0" x2="600" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#101c28" />
+      <stop offset="100%" stop-color="#1e3a5f" />
+    </linearGradient>
+    <linearGradient id="btn-amazon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff9900" />
+      <stop offset="100%" stop-color="#e68a00" />
+    </linearGradient>
+    <filter id="shadow-main" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+    <filter id="shadow-phone" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="960" height="540" fill="url(#bg-grad)" rx="16" />
+
+  <!-- Subtle Grid Accent -->
+  <g opacity="0.06" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="60" x2="960" y2="60" />
+    <line x1="0" y1="120" x2="960" y2="120" />
+    <line x1="0" y1="180" x2="960" y2="180" />
+    <line x1="0" y1="240" x2="960" y2="240" />
+    <line x1="0" y1="300" x2="960" y2="300" />
+    <line x1="0" y1="360" x2="960" y2="360" />
+    <line x1="0" y1="420" x2="960" y2="420" />
+    <line x1="0" y1="480" x2="960" y2="480" />
+    <line x1="120" y1="0" x2="120" y2="540" />
+    <line x1="240" y1="0" x2="240" y2="540" />
+    <line x1="360" y1="0" x2="360" y2="540" />
+    <line x1="480" y1="0" x2="480" y2="540" />
+    <line x1="600" y1="0" x2="600" y2="540" />
+    <line x1="720" y1="0" x2="720" y2="540" />
+    <line x1="840" y1="0" x2="840" y2="540" />
+  </g>
+
+  <!-- Title Pill Badges on Canvas Top -->
+  <g transform="translate(45, 30)">
+    <rect width="210" height="28" rx="14" fill="#e93d50" fill-opacity="0.15" stroke="#e93d50" stroke-width="1" />
+    <text x="105" y="18" fill="#ff7685" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">🔥 COMPRA JUSTA RESPONSIVO</text>
+  </g>
+  <g transform="translate(265, 30)">
+    <rect width="180" height="28" rx="14" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1" />
+    <text x="90" y="18" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">✓ SONARQUBE APPROVED</text>
+  </g>
+  <g transform="translate(455, 30)">
+    <rect width="165" height="28" rx="14" fill="#38bdf8" fill-opacity="0.15" stroke="#38bdf8" stroke-width="1" />
+    <text x="82" y="18" fill="#7dd3fc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">⚡ PREÇOS ANIMADOS</text>
+  </g>
+
+  <!-- ================= DESKTOP WINDOW ================= -->
+  <g transform="translate(45, 75)" filter="url(#shadow-main)">
+    <!-- Window Frame -->
+    <rect width="590" height="420" rx="10" fill="#ffffff" />
+    <!-- Window Bar -->
+    <rect width="590" height="34" rx="10" fill="#f1f5f9" />
+    <rect width="590" height="4" y="30" fill="#f1f5f9" />
+    <!-- Dots -->
+    <circle cx="18" cy="17" r="5" fill="#ef4444" />
+    <circle cx="34" cy="17" r="5" fill="#f59e0b" />
+    <circle cx="50" cy="17" r="5" fill="#10b981" />
+    <!-- URL Bar -->
+    <rect x="75" y="8" width="280" height="18" rx="9" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+    <text x="88" y="21" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">🔒 https://comprajusta.com.br</text>
+
+    <!-- Header Content -->
+    <rect x="0" y="34" width="590" height="40" fill="#ffffff" stroke="#f1f5f9" stroke-width="1" />
+    <text x="20" y="59" fill="#e93d50" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="800">Compra Justa</text>
+    <text x="110" y="58" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9">| O melhor lugar para ofertas</text>
+    <text x="440" y="58" fill="#1e293b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600">Lojas   Ofertas   Alertas</text>
+
+    <!-- Hero Banner in Desktop -->
+    <g transform="translate(18, 84)">
+      <rect width="554" height="110" rx="8" fill="url(#hero-grad)" />
+      <rect x="20" y="14" width="130" height="16" rx="8" fill="#e93d50" fill-opacity="0.3" stroke="#e93d50" stroke-width="0.8" />
+      <text x="85" y="25" fill="#ff99a4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" font-weight="700" text-anchor="middle">🔥 RADAR DE DESCONTOS</text>
+      <text x="20" y="52" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="800">Economize tempo e dinheiro</text>
+      <text x="20" y="68" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9">Filtramos os melhores cupons da Amazon, Magalu, Shopee e ML.</text>
+      <rect x="20" y="80" width="110" height="20" rx="10" fill="#e93d50" />
+      <text x="75" y="93" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" text-anchor="middle">Ver Ofertas ↓</text>
+    </g>
+
+    <!-- Partner Badges -->
+    <g transform="translate(18, 204)">
+      <rect x="0" y="0" width="128" height="24" rx="4" fill="#f8fafc" stroke="#e2e8f0" />
+      <text x="64" y="16" fill="#1e293b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" text-anchor="middle">🛒 Amazon</text>
+      <rect x="142" y="0" width="128" height="24" rx="4" fill="#f8fafc" stroke="#e2e8f0" />
+      <text x="206" y="16" fill="#1e293b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" text-anchor="middle">⚡ Mercado Livre</text>
+      <rect x="284" y="0" width="128" height="24" rx="4" fill="#f8fafc" stroke="#e2e8f0" />
+      <text x="348" y="16" fill="#1e293b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" text-anchor="middle">🛍️ Shopee</text>
+      <rect x="426" y="0" width="128" height="24" rx="4" fill="#f8fafc" stroke="#e2e8f0" />
+      <text x="490" y="16" fill="#1e293b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" text-anchor="middle">💙 Magalu</text>
+    </g>
+
+    <!-- Product Cards Grid in Desktop Preview -->
+    <g transform="translate(18, 240)">
+      <!-- Card 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="174" height="165" rx="8" fill="#ffffff" stroke="#e2e8f0" />
+        <rect x="8" y="8" width="46" height="15" rx="3" fill="#e93d50" />
+        <text x="31" y="19" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" font-weight="800" text-anchor="middle">-50%</text>
+        <rect x="8" y="27" width="158" height="60" rx="4" fill="#f1f5f9" />
+        <text x="87" y="62" fill="#64748b" font-size="22" text-anchor="middle">🎧</text>
+        <text x="12" y="99" fill="#1e293b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700">Fone Bluetooth</text>
+        <!-- Strikethrough Price -->
+        <text x="12" y="113" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8">De R$ 199,90</text>
+        <line x1="26" y1="110" x2="68" y2="110" stroke="#ef4444" stroke-width="1.5" />
+        <!-- New Price -->
+        <text x="12" y="130" fill="#16a34a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="800">R$ 99,90</text>
+        <!-- Button -->
+        <rect x="12" y="138" width="150" height="20" rx="4" fill="url(#btn-amazon)" />
+        <text x="87" y="151" fill="#111111" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" font-weight="800" text-anchor="middle">Ver na Amazon →</text>
+      </g>
+
+      <!-- Card 2 -->
+      <g transform="translate(190, 0)">
+        <rect width="174" height="165" rx="8" fill="#ffffff" stroke="#e2e8f0" />
+        <rect x="8" y="8" width="46" height="15" rx="3" fill="#e93d50" />
+        <text x="31" y="19" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" font-weight="800" text-anchor="middle">-25%</text>
+        <rect x="8" y="27" width="158" height="60" rx="4" fill="#f1f5f9" />
+        <text x="87" y="62" fill="#64748b" font-size="22" text-anchor="middle">📱</text>
+        <text x="12" y="99" fill="#1e293b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700">Smartphone 128GB</text>
+        <text x="12" y="113" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8">De R$ 1.999,90</text>
+        <line x1="26" y1="110" x2="78" y2="110" stroke="#ef4444" stroke-width="1.5" />
+        <text x="12" y="130" fill="#16a34a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="800">R$ 1.499,90</text>
+        <rect x="12" y="138" width="150" height="20" rx="4" fill="#ee4d2d" />
+        <text x="87" y="151" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" font-weight="800" text-anchor="middle">Ver na Shopee →</text>
+      </g>
+
+      <!-- Card 3 -->
+      <g transform="translate(380, 0)">
+        <rect width="174" height="165" rx="8" fill="#ffffff" stroke="#e2e8f0" />
+        <rect x="8" y="8" width="46" height="15" rx="3" fill="#e93d50" />
+        <text x="31" y="19" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" font-weight="800" text-anchor="middle">-25%</text>
+        <rect x="8" y="27" width="158" height="60" rx="4" fill="#f1f5f9" />
+        <text x="87" y="62" fill="#64748b" font-size="22" text-anchor="middle">💻</text>
+        <text x="12" y="99" fill="#1e293b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700">Notebook Ultrafino</text>
+        <text x="12" y="113" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8">De R$ 3.999,90</text>
+        <line x1="26" y1="110" x2="78" y2="110" stroke="#ef4444" stroke-width="1.5" />
+        <text x="12" y="130" fill="#16a34a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="800">R$ 2.999,90</text>
+        <rect x="12" y="138" width="150" height="20" rx="4" fill="#ffe600" />
+        <text x="87" y="151" fill="#2d3277" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" font-weight="800" text-anchor="middle">Ver no ML →</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= MOBILE PHONE PREVIEW ================= -->
+  <g transform="translate(675, 55)" filter="url(#shadow-phone)">
+    <!-- Phone Bezel -->
+    <rect width="240" height="460" rx="36" fill="#0f172a" stroke="#334155" stroke-width="4" />
+    <!-- Dynamic Island / Speaker -->
+    <rect x="85" y="12" width="70" height="16" rx="8" fill="#020617" />
+    <circle cx="140" cy="20" r="3" fill="#1e293b" />
+    <!-- Phone Screen -->
+    <rect x="8" y="34" width="224" height="414" rx="28" fill="#ffffff" />
+
+    <!-- Phone Screen Content -->
+    <g transform="translate(8, 34)">
+      <clipPath id="phone-clip">
+        <rect width="224" height="414" rx="28" />
+      </clipPath>
+      <g clip-path="url(#phone-clip)">
+        <!-- Top Status Bar -->
+        <rect width="224" height="20" fill="#ffffff" />
+        <text x="24" y="14" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700">12:00</text>
+        <text x="180" y="14" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8">5G 🔋</text>
+
+        <!-- Mobile Header -->
+        <rect y="20" width="224" height="46" fill="#ffffff" stroke="#f1f5f9" stroke-width="1" />
+        <text x="112" y="40" fill="#e93d50" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="800" text-anchor="middle">Compra Justa</text>
+        <text x="112" y="52" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" text-anchor="middle">Lojas • Ofertas • Alertas</text>
+
+        <!-- Mobile Hero -->
+        <g transform="translate(8, 72)">
+          <rect width="208" height="68" rx="8" fill="url(#hero-grad)" />
+          <text x="104" y="24" fill="#ff99a4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="7" font-weight="700" text-anchor="middle">🔥 RADAR HOJE</text>
+          <text x="104" y="40" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" text-anchor="middle">As Melhores Ofertas</text>
+          <rect x="54" y="47" width="100" height="15" rx="7.5" fill="#e93d50" />
+          <text x="104" y="58" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="7" font-weight="700" text-anchor="middle">Ver Ofertas ↓</text>
+        </g>
+
+        <!-- Mobile Product Card (Vertical Stack) -->
+        <g transform="translate(8, 148)">
+          <rect width="208" height="190" rx="8" fill="#ffffff" stroke="#e2e8f0" />
+          <rect x="8" y="8" width="46" height="15" rx="3" fill="#e93d50" />
+          <text x="31" y="19" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" font-weight="800" text-anchor="middle">-50%</text>
+          <rect x="8" y="28" width="192" height="66" rx="6" fill="#f8fafc" />
+          <text x="104" y="68" fill="#64748b" font-size="28" text-anchor="middle">🎧</text>
+          
+          <text x="12" y="108" fill="#1e293b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700">Fone Sem Fio Bluetooth</text>
+          
+          <!-- Animated Strike Line Demo -->
+          <text x="12" y="122" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8">De R$ 199,90</text>
+          <line x1="24" y1="119" x2="68" y2="119" stroke="#ef4444" stroke-width="1.5" />
+          <text x="12" y="140" fill="#16a34a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="800">R$ 99,90</text>
+          
+          <!-- Simular Cupom Mini Button -->
+          <rect x="125" y="125" width="75" height="18" rx="4" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="0.8" />
+          <text x="162" y="137" fill="#047857" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="7" font-weight="700" text-anchor="middle">🏷️ Cupom VIP</text>
+          
+          <!-- Amazon Affiliate Button -->
+          <rect x="12" y="152" width="184" height="28" rx="6" fill="url(#btn-amazon)" />
+          <text x="104" y="169" fill="#111111" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="800" text-anchor="middle">Ver na Amazon →</text>
+        </g>
+
+        <!-- Newsletter Bar in Mobile -->
+        <g transform="translate(8, 346)">
+          <rect width="208" height="54" rx="8" fill="#1e293b" />
+          <text x="104" y="364" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" font-weight="700" text-anchor="middle">Receba Cupons no E-mail</text>
+          <rect x="14" y="372" width="180" height="18" rx="9" fill="#ffffff" />
+          <text x="24" y="384" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="7">Seu melhor e-mail...</text>
+        </g>
+
+      </g>
+    </g>
+
+    <!-- Bottom Home Indicator -->
+    <rect x="80" y="440" width="80" height="4" rx="2" fill="#475569" />
+  </g>
+</svg>
+

@@ -150,6 +150,21 @@ Assim que sua conta for aprovada nos programas de afiliados da **Amazon**, **Mag
    </a>
    ```
 
+### 5. Nicho Pet (Petz / Cobasi / Amazon Pet)
+1. Acesse o programa de afiliados da **Petz** (via Awin/painel parceiro) ou **Cobasi**.
+2. Gere seu link de afiliado para o **Card 5** (Bebedouro Fonte Automática Pet).
+3. Substitua no `index.html`:
+   ```html
+   <a href="https://www.petz.com.br/busca?q=fonte+bebedouro+inox&seller_id=SEU_ID" 
+      target="_blank" 
+      rel="noopener noreferrer sponsored" 
+      class="botao-compra botao--petz">
+       <span>Ver na Petz</span>
+       <span aria-hidden="true">→</span>
+   </a>
+   ```
+   *(Ou utilize a classe `.botao--cobasi` com a cor oficial da Cobasi se preferir).*
+
 ### ⚠️ Regras Obrigatórias de Boas Práticas (Compliance):
 * **Sempre inclua `rel="noopener noreferrer sponsored"`**: O Google e os programas de afiliados exigem o atributo `sponsored` para links monetizados.
 * **Nunca use encurtadores genéricos que disfarcem a loja de destino**: Utilize os encurtadores oficiais da própria plataforma (`amzn.to`, `s.shopee.com.br`, etc.).
@@ -187,7 +202,8 @@ c:/afiliados-shop/
     ├── fone-bluetooth.jpg      # Foto do Produto 1 (Amazon)
     ├── Produto-Iphone.jpg      # Foto do Produto 2 (Shopee)
     ├── notebook.jpg            # Foto do Produto 3 (Mercado Livre)
-    └── smartwatch.jpg          # Foto do Produto 4 (Magalu)
+    ├── smartwatch.jpg          # Foto do Produto 4 (Magalu)
+    └── fonte-pet.jpg           # Foto do Produto 5 (Nicho Pet - Petz/Cobasi)
 ```
 
 ---

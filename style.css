@@ -30,6 +30,10 @@
     --cor-mercadolivre-texto: #2d3277;
     --cor-magalu: #0086ff;
     --cor-magalu-hover: #0070d9;
+    --cor-petz: #003882;
+    --cor-petz-hover: #00265c;
+    --cor-cobasi: #008542;
+    --cor-cobasi-hover: #006833;
 
     /* Sombras e Bordas */
     --sombra-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
@@ -331,6 +335,8 @@ button, input {
 .parceiro-badge.shopee:hover { border-color: var(--cor-shopee); }
 .parceiro-badge.mercadolivre:hover { border-color: var(--cor-mercadolivre); }
 .parceiro-badge.magalu:hover { border-color: var(--cor-magalu); }
+.parceiro-badge.petz:hover { border-color: var(--cor-petz); }
+.parceiro-badge.cobasi:hover { border-color: var(--cor-cobasi); }
 
 /* --------------------------------------------------------------------------
    6. VITRINE DE PRODUTOS & ANIMAÇÕES DE PREÇO
@@ -702,6 +708,24 @@ button, input {
 }
 .botao--magalu:hover {
     background-color: var(--cor-magalu-hover);
+}
+
+.botao--petz,
+.botao--pet {
+    background-color: var(--cor-petz);
+    color: #ffffff;
+}
+.botao--petz:hover,
+.botao--pet:hover {
+    background-color: var(--cor-petz-hover);
+}
+
+.botao--cobasi {
+    background-color: var(--cor-cobasi);
+    color: #ffffff;
+}
+.botao--cobasi:hover {
+    background-color: var(--cor-cobasi-hover);
 }
 
 /* --------------------------------------------------------------------------
